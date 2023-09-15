@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed May 24 14:59:50 2023
+# Process ID: 93124
+# Current directory: G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22140 G:\poli\an2\sem2\CA\Vivado\2022.2\MIPSProcessor\MIPSProcessor.xpr
+# Log file: G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/vivado.log
+# Journal file: G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor\vivado.jou
+# Running On: DESKTOP-VPOTR71, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 16, Host memory: 16558 MB
+#-----------------------------------------------------------
+start_gui
+open_project G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,356 @@
+
+*** Running vivado
+    with args -log Processor.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Processor.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source Processor.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/utils_1/imports/synth_1/ROM_ISA.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/utils_1/imports/synth_1/ROM_ISA.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Processor -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9848
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [G:/poli/an2/sem2/CA/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1205.336 ; gain = 408.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Processor' [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/Processor.vhd:44]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'G:/poli/an2/sem2/CA/Vivado/2022.2/project_1/project_1.srcs/sources_1/new/lab1.vhd:37' bound to instance 'Debouncer_label_Reg' of component 'debouncer' [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/Processor.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [G:/poli/an2/sem2/CA/Vivado/2022.2/project_1/project_1.srcs/sources_1/new/lab1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (0#1) [G:/poli/an2/sem2/CA/Vivado/2022.2/project_1/project_1.srcs/sources_1/new/lab1.vhd:43]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'G:/poli/an2/sem2/CA/Vivado/2022.2/project_1/project_1.srcs/sources_1/new/lab1.vhd:37' bound to instance 'Debouncer_label' of component 'debouncer' [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/Processor.vhd:156]
+INFO: [Synth 8-3491] module 'Instruction_Fetch_Data_Path' declared at 'G:/poli/an2/sem2/CA/Vivado/2022.2/Instruction Fetch Data-Path for MIPS32/Instruction Fetch Data-Path for MIPS32.srcs/sources_1/new/instructions.vhd:36' bound to instance 'InstructionFetch_label' of component 'Instruction_Fetch_Data_Path' [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/Processor.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'Instruction_Fetch_Data_Path' [G:/poli/an2/sem2/CA/Vivado/2022.2/Instruction Fetch Data-Path for MIPS32/Instruction Fetch Data-Path for MIPS32.srcs/sources_1/new/instructions.vhd:48]
+WARNING: [Synth 8-614] signal 'counter_plus_1' is read in the process but is not in the sensitivity list [G:/poli/an2/sem2/CA/Vivado/2022.2/Instruction Fetch Data-Path for MIPS32/Instruction Fetch Data-Path for MIPS32.srcs/sources_1/new/instructions.vhd:111]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_Fetch_Data_Path' (0#1) [G:/poli/an2/sem2/CA/Vivado/2022.2/Instruction Fetch Data-Path for MIPS32/Instruction Fetch Data-Path for MIPS32.srcs/sources_1/new/instructions.vhd:48]
+INFO: [Synth 8-3491] module 'InstructionDecoder' declared at 'G:/poli/an2/sem2/CA/Vivado/2022.2/Instruction Decode/Instruction Decode.srcs/sources_1/new/InstructionDecoder.vhd:34' bound to instance 'InstructionDecoder_label' of component 'InstructionDecoder' [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/Processor.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'InstructionDecoder' [G:/poli/an2/sem2/CA/Vivado/2022.2/Instruction Decode/Instruction Decode.srcs/sources_1/new/InstructionDecoder.vhd:51]
+WARNING: [Synth 8-614] signal 'ExtOP' is read in the process but is not in the sensitivity list [G:/poli/an2/sem2/CA/Vivado/2022.2/Instruction Decode/Instruction Decode.srcs/sources_1/new/InstructionDecoder.vhd:80]
+INFO: [Synth 8-3491] module 'RegFile' declared at 'G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/RegFile.vhd:36' bound to instance 'label1' of component 'RegFile' [G:/poli/an2/sem2/CA/Vivado/2022.2/Instruction Decode/Instruction Decode.srcs/sources_1/new/InstructionDecoder.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/RegFile.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (0#1) [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/RegFile.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecoder' (0#1) [G:/poli/an2/sem2/CA/Vivado/2022.2/Instruction Decode/Instruction Decode.srcs/sources_1/new/InstructionDecoder.vhd:51]
+INFO: [Synth 8-3491] module 'InstructionExecute' declared at 'G:/poli/an2/sem2/CA/Vivado/2022.2/InstructionExecute/InstructionExecute.srcs/sources_1/new/InstructionExecute.vhd:36' bound to instance 'InstructionExecute_label' of component 'InstructionExecute' [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/Processor.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'InstructionExecute' [G:/poli/an2/sem2/CA/Vivado/2022.2/InstructionExecute/InstructionExecute.srcs/sources_1/new/InstructionExecute.vhd:52]
+WARNING: [Synth 8-614] signal 'rd2' is read in the process but is not in the sensitivity list [G:/poli/an2/sem2/CA/Vivado/2022.2/InstructionExecute/InstructionExecute.srcs/sources_1/new/InstructionExecute.vhd:61]
+WARNING: [Synth 8-614] signal 'Ext_Imm' is read in the process but is not in the sensitivity list [G:/poli/an2/sem2/CA/Vivado/2022.2/InstructionExecute/InstructionExecute.srcs/sources_1/new/InstructionExecute.vhd:61]
+INFO: [Synth 8-226] default block is never used [G:/poli/an2/sem2/CA/Vivado/2022.2/InstructionExecute/InstructionExecute.srcs/sources_1/new/InstructionExecute.vhd:71]
+INFO: [Synth 8-226] default block is never used [G:/poli/an2/sem2/CA/Vivado/2022.2/InstructionExecute/InstructionExecute.srcs/sources_1/new/InstructionExecute.vhd:73]
+WARNING: [Synth 8-614] signal 'AluAux' is read in the process but is not in the sensitivity list [G:/poli/an2/sem2/CA/Vivado/2022.2/InstructionExecute/InstructionExecute.srcs/sources_1/new/InstructionExecute.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'InstructionExecute' (0#1) [G:/poli/an2/sem2/CA/Vivado/2022.2/InstructionExecute/InstructionExecute.srcs/sources_1/new/InstructionExecute.vhd:52]
+INFO: [Synth 8-3491] module 'DataMemory' declared at 'G:/poli/an2/sem2/CA/Vivado/2022.2/DataMemory/DataMemory.srcs/sources_1/new/DataMemory.vhd:35' bound to instance 'DataMemory_label' of component 'DataMemory' [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/Processor.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [G:/poli/an2/sem2/CA/Vivado/2022.2/DataMemory/DataMemory.srcs/sources_1/new/DataMemory.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (0#1) [G:/poli/an2/sem2/CA/Vivado/2022.2/DataMemory/DataMemory.srcs/sources_1/new/DataMemory.vhd:43]
+INFO: [Synth 8-3491] module 'ControlUnit' declared at 'G:/poli/an2/sem2/CA/Vivado/2022.2/ControlUnit/ControlUnit.srcs/sources_1/new/ControlUnit.vhd:34' bound to instance 'ControlUnit_label' of component 'ControlUnit' [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/Processor.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ControlUnit' [G:/poli/an2/sem2/CA/Vivado/2022.2/ControlUnit/ControlUnit.srcs/sources_1/new/ControlUnit.vhd:49]
+INFO: [Synth 8-226] default block is never used [G:/poli/an2/sem2/CA/Vivado/2022.2/ControlUnit/ControlUnit.srcs/sources_1/new/ControlUnit.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (0#1) [G:/poli/an2/sem2/CA/Vivado/2022.2/ControlUnit/ControlUnit.srcs/sources_1/new/ControlUnit.vhd:49]
+INFO: [Synth 8-3491] module 'ssd' declared at 'G:/poli/an2/sem2/CA/Vivado/2022.2/lab2/lab2.srcs/sources_1/new/ssd.vhd:36' bound to instance 'Ssd_label' of component 'ssd' [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/Processor.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'ssd' [G:/poli/an2/sem2/CA/Vivado/2022.2/lab2/lab2.srcs/sources_1/new/ssd.vhd:45]
+INFO: [Synth 8-226] default block is never used [G:/poli/an2/sem2/CA/Vivado/2022.2/lab2/lab2.srcs/sources_1/new/ssd.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'ssd' (0#1) [G:/poli/an2/sem2/CA/Vivado/2022.2/lab2/lab2.srcs/sources_1/new/ssd.vhd:45]
+INFO: [Synth 8-226] default block is never used [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/Processor.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'Processor' (0#1) [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/Processor.vhd:44]
+WARNING: [Synth 8-3848] Net dp in module/entity Processor does not have driver. [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/Processor.vhd:41]
+WARNING: [Synth 8-3848] Net RightAdder in module/entity Processor does not have driver. [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/sources_1/new/Processor.vhd:58]
+WARNING: [Synth 8-7129] Port addr[15] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[9] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[8] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wa[2] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wa[1] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wa[0] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[15] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[14] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[13] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[12] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[11] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[10] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[9] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[8] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[7] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[6] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[5] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[4] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[3] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[2] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[1] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wd[0] in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wen in module RegFile is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[15] in module InstructionDecoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[14] in module InstructionDecoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[13] in module InstructionDecoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dp in module Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[4] in module Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module Processor is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1295.836 ; gain = 498.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1295.836 ; gain = 498.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1295.836 ; gain = 498.727
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1295.836 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Processor_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Processor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1389.422 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1389.422 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [G:/poli/an2/sem2/CA/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1389.422 ; gain = 592.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1389.422 ; gain = 592.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1389.422 ; gain = 592.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1389.422 ; gain = 592.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 3     
+	   3 Input   16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	               4K Bit	(256 X 16 bit)          RAMs := 1     
++---Muxes : 
+	  17 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 8     
+	   2 Input    8 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port dp in module Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[4] in module Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module Processor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module Processor is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1389.422 ; gain = 592.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Processor   | DataMemory_label/RAM_reg | 256 x 16(NO_CHANGE)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1389.422 ; gain = 592.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1389.422 ; gain = 592.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Processor   | DataMemory_label/RAM_reg | 256 x 16(NO_CHANGE)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+--------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance DataMemory_label/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1389.422 ; gain = 592.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1389.422 ; gain = 592.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1389.422 ; gain = 592.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1389.422 ; gain = 592.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1389.422 ; gain = 592.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1389.422 ; gain = 592.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1389.422 ; gain = 592.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    17|
+|3     |LUT1     |     3|
+|4     |LUT2     |     8|
+|5     |LUT3     |     7|
+|6     |LUT4     |    51|
+|7     |LUT5     |    20|
+|8     |LUT6     |    44|
+|9     |RAMB18E1 |     1|
+|10    |FDCE     |    20|
+|11    |FDRE     |    22|
+|12    |IBUF     |     7|
+|13    |OBUF     |    19|
+|14    |OBUFT    |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1389.422 ; gain = 592.312
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1389.422 ; gain = 498.727
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1389.422 ; gain = 592.312
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1389.422 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1389.422 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: c646043e
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 56 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1389.422 ; gain = 968.645
+INFO: [Common 17-1381] The checkpoint 'G:/poli/an2/sem2/CA/Vivado/2022.2/MIPSProcessor/MIPSProcessor.runs/synth_1/Processor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Processor_utilization_synth.rpt -pb Processor_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 30 23:01:51 2023...
